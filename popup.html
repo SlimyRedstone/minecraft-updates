@@ -1,0 +1,36 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700" rel="stylesheet" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="popup.css">
+		<!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
+		<script src="popup.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div id="main" state="open"></div>
+		<div id="selected" state="close">
+			<div class="content">
+				<div class="head">
+					<div class="close-button" button="close">❌</div>
+				</div>
+				<div class="content-body" id="body"></div>
+			</div>
+		</div>
+	</body>
+	<template name="update">
+		<div class="update" data-version="" data-type="" version-id="">
+			<div class="background" data-name="image"></div>
+			<div class="content">
+				<div class="title" data-name="title"></div>
+				<div class="content-body">
+					<div class="image" data-name="image"></div>
+					<div class="body" data-name="body"></div>
+				</div>
+			</div>
+		</div>
+	</template>
+</html>
